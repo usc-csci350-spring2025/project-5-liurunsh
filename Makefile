@@ -1,9 +1,11 @@
 # You might need to change this
 test.out:
 	gcc -O2 main.c -o main
+	gcc -O2 mapper.c -o mapper
+	gcc -O2 reducer.c -o reducer
 
 clean:
-	rm *.o
+	rm -f main mapper reducer
 # Do not change these
 test1:
 	bash tests/test1.sh
@@ -45,3 +47,14 @@ test19:
 	bash tests/test19.sh
 test20:
 	bash tests/test20.sh
+
+all: main mapper reducer
+
+main: main.c
+	gcc -O2 main.c -o main
+
+mapper: mapper.c
+	gcc -O2 mapper.c -o mapper
+
+reducer: reducer.c
+	gcc -O2 reducer.c -o reducer

@@ -1,7 +1,7 @@
 echo "Running test1..."
 echo
 
-out=$(sudo ./main <tests/input1.txt >outputs/output1.txt)
+out=$(./main <tests/input1.txt >outputs/output1.txt)
 output=$(sort outputs/output1.txt)
 expected_output='a 1
 all 2
