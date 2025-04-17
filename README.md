@@ -7,3 +7,14 @@ TO DO:
 * Change Makefile accordingly.
   
 **If you change any of the tests, you will automatically get 0.**
+
+### USC emails:
+liurunsh@usc.edu
+
+### How to compile and run:
+
+Run the commands:
+  1. git clone https://github.com/usc-csci350-spring2025/project-5-liurunsh.git
+  2. cd project-5-liurunsh
+  3. make & ./run_tests.sh
+  
